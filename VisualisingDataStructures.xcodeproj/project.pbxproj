@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		62C3334929C2766800368E23 /* VisualisingDataStructuresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3334829C2766800368E23 /* VisualisingDataStructuresApp.swift */; };
-		62C3334B29C2766800368E23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3334A29C2766800368E23 /* ContentView.swift */; };
+		62C3334B29C2766800368E23 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3334A29C2766800368E23 /* StackView.swift */; };
 		62C3334D29C2766B00368E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C3334C29C2766B00368E23 /* Assets.xcassets */; };
 		62C3335029C2766B00368E23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C3334F29C2766B00368E23 /* Preview Assets.xcassets */; };
 		62C3335A29C2766B00368E23 /* VisualisingDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3335929C2766B00368E23 /* VisualisingDataStructuresTests.swift */; };
 		62C3336429C2766B00368E23 /* VisualisingDataStructuresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3336329C2766B00368E23 /* VisualisingDataStructuresUITests.swift */; };
 		62C3336629C2766B00368E23 /* VisualisingDataStructuresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3336529C2766B00368E23 /* VisualisingDataStructuresUITestsLaunchTests.swift */; };
+		62C3337329C276B800368E23 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3337229C276B800368E23 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		62C3334529C2766800368E23 /* VisualisingDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualisingDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C3334829C2766800368E23 /* VisualisingDataStructuresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresApp.swift; sourceTree = "<group>"; };
-		62C3334A29C2766800368E23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62C3334A29C2766800368E23 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		62C3334C29C2766B00368E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62C3334F29C2766B00368E23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		62C3335529C2766B00368E23 /* VisualisingDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualisingDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		62C3335F29C2766B00368E23 /* VisualisingDataStructuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualisingDataStructuresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C3336329C2766B00368E23 /* VisualisingDataStructuresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresUITests.swift; sourceTree = "<group>"; };
 		62C3336529C2766B00368E23 /* VisualisingDataStructuresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62C3337229C276B800368E23 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				62C3334829C2766800368E23 /* VisualisingDataStructuresApp.swift */,
-				62C3334A29C2766800368E23 /* ContentView.swift */,
+				62C3334A29C2766800368E23 /* StackView.swift */,
 				62C3334C29C2766B00368E23 /* Assets.xcassets */,
 				62C3334E29C2766B00368E23 /* Preview Content */,
+				62C3337229C276B800368E23 /* Stack.swift */,
 			);
 			path = VisualisingDataStructures;
 			sourceTree = "<group>";
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C3334B29C2766800368E23 /* ContentView.swift in Sources */,
+				62C3334B29C2766800368E23 /* StackView.swift in Sources */,
+				62C3337329C276B800368E23 /* Stack.swift in Sources */,
 				62C3334929C2766800368E23 /* VisualisingDataStructuresApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
