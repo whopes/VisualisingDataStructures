@@ -11,7 +11,7 @@ import SwiftUI
 struct VisualisingDataStructuresApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabView()
         }
     }
 }

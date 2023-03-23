@@ -7,26 +7,28 @@
 
 import Foundation
 
-class Stack {
-    var stack: [String?]
+class Stack: ObservableObject {
+    @Published var stack: [Item] = []
     var tail: Int
     
     init(size: Int) {
-        self.stack = [String?](repeating: nil, count: size)
         self.tail = -1
+        for i in 0 ..< size {
+            self.stack.append(Item(nil, i))
+        }
     }
     
     func push(data: String) {
         self.tail += 1
-        self.stack[self.tail] = data
+        self.stack[self.tail].name = data
     }
     
     func pop() -> String {
         if self.tail > -1 {
-            let data = self.stack[self.tail]
-            self.stack[self.tail] = nil
+            let data = self.stack[self.tail].name
+            self.stack[self.tail].name = nil
             self.tail -= 1
-            return data!
+            return data ?? "nil"
         } else {
             return "There is nothing left in the stack"
         }
@@ -34,18 +36,18 @@ class Stack {
     
     func peek() -> String {
         if self.tail > -1 {
-            return self.stack[self.tail]!
+            return self.stack[self.tail].name ?? "nil"
         } else {
             return "There is nothing in the stack"
         }
     }
     
     func display() -> String {
-        var display_array = ["\(self.stack[0]!)"]
+        var display_array = ["\(self.stack[0].name ?? "empty")"]
         for i in 1 ..< self.stack.count {
             let item = self.stack[i]
-            if item != nil {
-                display_array.append("\(item!)")
+            if item.name != nil {
+                display_array.append("\(item.name!)")
             }
         }
         let displayed = display_array.joined(separator: ", ")
