@@ -52,7 +52,8 @@ class Linked_list: ObservableObject {
                                 next = new
                             } else {
                                 next.pointer = element
-                                break
+                                list.append(element)
+                                return
                             }
                     }
                         element.pointer = next
